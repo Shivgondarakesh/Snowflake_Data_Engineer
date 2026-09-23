@@ -9,6 +9,8 @@ This is not a toy project. It covers the problems that actually consume a data e
 ## Architecture
 
 ![Pipeline Architecture](architecture/pipeline_architecture.png)
+<img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/e4df2b6a-9305-4bc3-90e2-43378888bf87" />
+
 
 ---
 
