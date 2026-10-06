@@ -1,0 +1,48 @@
+DIFFRENT CLOUD PROVIDER
+Azure
+AWS
+GCP
+
+TYPES OF CLOUD:-
+Public
+Private
+Hybrid
+
+AZURE DATA ENGINEER:-
+ADLS
+ADF
+Python
+DataBricks
+Azure Synapse
+Tableae/Power BI
+
+ADLS:--
+
+🔍 What is ADLS?
+Azure Data Lake Storage (ADLS) is a cloud-based storage service optimized for analytics workloads. It allows you to store massive amounts of structured and unstructured data and is tightly integrated with the Azure ecosystem.
+
+🧱 Key Features
+
+Hierarchical namespace: Like a file system, supports directories and files.
+Scalable: Handles petabytes of data.
+Secure: Integrated with Azure Active Directory (AAD), role-based access control (RBAC), and encryption.
+Cost-effective: Pay-as-you-go model.
+Supports Hadoop: Compatible with HDFS, so tools like Databricks, HDInsight, and Azure Synapse can read/write directly.
+
+
+🧰 Common Use Cases
+
+Storing raw data for analytics pipelines
+Data ingestion from various sources (IoT, logs, databases)
+Machine learning and AI workloads
+Integration with tools like Azure Data Factory, Databricks, Synapse Analytics
+
+
+🆚 ADLS Gen1 vs Gen2
+
+Gen1: Older, limited to hierarchical namespace, not recommended for new projects.
+Gen2: Combines Blob Storage features with hierarchical namespace, better performance, and lower cost.
+
+
+🧰 Example Pipeline Flow
+Source (SQL/CSV/API) → Azure Data Factory → ADLS Gen2 → Databricks/Synapse → Power BI
