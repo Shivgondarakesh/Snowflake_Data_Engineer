@@ -1,0 +1,7 @@
+snowflake:
+  user: USERNAME
+  password: PASSWORD
+  account: ACCOUNT
+  warehouse: COMPUTE_WH
+  database: TEST_DB
+  schema: PUBLIC

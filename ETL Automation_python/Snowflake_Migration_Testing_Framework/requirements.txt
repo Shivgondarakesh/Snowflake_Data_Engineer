@@ -1,0 +1,5 @@
+pytest
+snowflake-connector-python
+pandas
+pyyaml
+pytest-html

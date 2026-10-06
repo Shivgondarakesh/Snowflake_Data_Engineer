@@ -1,0 +1,41 @@
+2026-09-07 22:14:28,769 | INFO | Reading C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\data\customers.csv
+2026-09-07 22:14:28,788 | INFO | Reading C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\data\orders.csv
+2026-09-07 22:14:28,798 | INFO | Transform started
+2026-09-07 22:14:28,816 | INFO | Writing C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\output\orders_transformed.csv
+2026-09-07 22:14:28,829 | ERROR | ETL failed: Cannot save file into a non-existent directory: 'C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\output'
+Traceback (most recent call last):
+  File "C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\src\etl_pipeline.py", line 13, in run_etl
+    save_output(r,base/"output/orders_transformed.csv")
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\src\load.py", line 5, in save_output
+    df.to_csv(path,index=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\.venv\Lib\site-packages\pandas\core\generic.py", line 3976, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\.venv\Lib\site-packages\pandas\io\formats\format.py", line 1025, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\.venv\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\.venv\Lib\site-packages\pandas\io\common.py", line 797, in get_handle
+    check_parent_directory(str(handle))
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\.venv\Lib\site-packages\pandas\io\common.py", line 656, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'C:\Users\r107\OneDrive - Capgemini\desktop documets\ETL Automation_python\ETL_PyTest_Logging_Project\output'
